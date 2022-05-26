@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>git</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="git">
+  <meta name="keywords"
+    content="doc,igeekdong,documentation,github,gitee,coding,pages,leetcode,lcof,lcci,lcof2,coding-interview,coding-interview-guide,cracking-the-coding-interview,yanglbme">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="_media/favicon-32x32.png">
+  <!-- gitalk -->
+  <link rel="stylesheet" href="//fastly.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+</head>
+
+<body>
+  <div id="app">Loading...</div>
+  <script>
+    window.$docsify = {
+      logo: '_media/images/serch.png',
+      // 小屏模式下合并导航栏到侧边栏
+      mergeNavbar: true,
+      // 文档更新日期
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      // 是否打开封面
+      coverpage: false,
+      // 是否侧边栏
+      loadSidebar: true,
+      // 侧边栏目录等级
+      subMaxLevel: 4,
+      // 自动头部
+      autoHeader: true,
+      // 点击文档跳转时自动到顶部
+      auto2top: true,
+      // 小屏模式下不合并侧边栏
+      mergeNavbar: false,
+      count: {
+        countable: true,
+        fontsize: '1.5em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+      name: 'git',
+      repo: 'igeekdong/git'
+    }
+  </script>
+  <script src="//fastly.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!--搜索插件 -->
+  <script src="//fastly.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 简单文字复制插件 -->
+  <script src="//fastly.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 统计文字 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 图片缩放插件 -->
+  <script src="//fastly.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+  <!-- gittalk -->
+  <script src="//fastly.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: 'f340389e9f8d05c53044',
+      clientSecret: 'ee32ceeb4629abde8c50b6b7aa9b8a854158e8ac',
+      repo: 'git',
+      owner: 'igeekdong',
+      admin: ['igeekdong'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false,
+      id: document.getElementsByName('title')[0].innerHTML
+    });
+
+  </script>
+  <!-- 代码高亮插件 -->
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-c.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-go.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-kotlin.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs@1.15.0/components/prism-javascript.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs@1.15.0/components/prism-typescript.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-swift.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-nim.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-ruby.min.js"></script>
+  <script src="//fastly.jsdelivr.net/npm/prismjs/components/prism-rust.min.js"></script>
+
+
+
+  <!-- service Worker -->
+  <!-- <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script> -->
+
+  <!-- 解决无法滚动问题 -->
+  <!-- <style type="text/css">
+    body {
+      overflow: auto !important;
+    }
+  </style> -->
+</body>
+
+</html>
